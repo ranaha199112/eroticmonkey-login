@@ -5,7 +5,7 @@ import { useState } from "react";
 import { toast } from "react-toastify";
 import { useRouter } from "next/router";
 
-function LoginForm({ setShowModal }) {
+function LoginForm() {
   const router = useRouter();
   // const [showWrongPassword, setShowWrongPassword] = useState(false);
 
@@ -16,7 +16,7 @@ function LoginForm({ setShowModal }) {
     remember: "",
   };
 
-  const { login } = useMockLogin({ setShowModal });
+  const { login } = useMockLogin();
 
   const handleSubmit = (values, formik) => {
     const { email, password } = values;
