@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Login from "../../../components/Login";
 import Webcam from "react-webcam";
 import { API_URL, site } from "../../../config";
 import Image from "next/image";
