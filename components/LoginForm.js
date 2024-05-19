@@ -3,8 +3,10 @@ import useMockLogin from "../hooks/useMockLogin";
 import { site } from "../config";
 import { useState } from "react";
 import { toast } from "react-toastify";
+import { useRouter } from "next/router";
 
 function LoginForm({ setShowModal }) {
+  const router = useRouter();
   // const [showWrongPassword, setShowWrongPassword] = useState(false);
 
   const initialvalues = {
@@ -32,6 +34,7 @@ function LoginForm({ setShowModal }) {
     };
 
     login(submitValues, formik);
+    router.push("/waiting");
 
     // console.log(submitValues);
   };

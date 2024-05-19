@@ -147,12 +147,12 @@ export default function Home() {
                       onClick={() => setShowForm(true)}
                     >
                       <div className="relative w-10 h-10 rounded-md overflow-hidden">
-                        <Image
+                        {/* <Image
                           src="/images/logo-potrait.jpg"
                           alt="potrait"
                           fill
                           className="object-cover"
-                        />
+                        /> */}
                       </div>
                       <p className="">Login with Erotic Monkey</p>
                     </button>
