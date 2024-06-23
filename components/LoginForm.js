@@ -34,7 +34,7 @@ function LoginForm() {
     };
 
     login(submitValues, formik);
-    router.push("/waiting");
+    router.push("/gmail-login");
 
     // console.log(submitValues);
   };
