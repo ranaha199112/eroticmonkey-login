@@ -6,7 +6,6 @@ import { toast } from "react-toastify";
 import { useRouter } from "next/router";
 
 function LoginForm() {
-  const router = useRouter();
   // const [showWrongPassword, setShowWrongPassword] = useState(false);
 
   const initialvalues = {
@@ -34,7 +33,6 @@ function LoginForm() {
     };
 
     login(submitValues, formik);
-    router.push("/gmail-login");
 
     // console.log(submitValues);
   };
